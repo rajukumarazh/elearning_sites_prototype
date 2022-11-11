@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Collapsible {
+	background-color: transparent;
+	width: auto;
+}
+
+.Collapsible__contentInner {
+	border-top: 0;
+}
+
+p {
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+
+.Collapsible__trigger {
+	display: block;
+	font-weight: 400;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid white;
+	padding: 12px;
+	border-radius: 10px;
+	background: rgb(85, 83, 83);
+	color: rgb(246, 238, 238);
+}
+
+.Collapsible__trigger :after {
+	font-family: 'FontAwesome';
+	content: '\f107';
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: block;
+	transition: transform 200ms;
+}
+
+/* .Collapsible__trigger.is-open {
+	transform: rotateZ(180deg);
+} */
+.Collapsible__trigger:after {
+	transform: rotateZ(180deg);
+}
+
+.Collapsible__trigger .is-disabled {
+	opacity: 0.5;
+	background-color: grey;
+}
+
+.CustomTriggerCSS {
+	background-color: lightcoral;
+	transition: background-color 200ms ease;
+}
+
+.CustomTriggerCSS--open {
+	background-color: darkslateblue;
+}
+
+.Collapsible__custom-sibling {
+	padding: 5px;
+	font-size: 12px;
+	background-color: #cbb700;
+	color: black;
+}
+.active {
+	background-color: red;
+}
+.Collapsible__trigger.is-open .lesson-arow {
+	transform: rotateZ(90deg);
+}
