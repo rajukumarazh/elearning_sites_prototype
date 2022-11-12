@@ -30,7 +30,7 @@ function App() {
 	let isAuthenticated = sessionStorage.getItem('auth');
 	console.log('kkkfjkd', isAuthenticated);
 	// sessionStorage.getItem('auth') !== '' ? notifyDefault2() : 'kdk';
-
+console.log("new here")
 	return (
 		<div>
 			{currentPage !== '/profile' &&
